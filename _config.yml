@@ -38,3 +38,6 @@ defaults:
       sidebar:
         nav: "main"
 minimal_mistakes_skin: "default"
+atom_feed:
+  hide: true
+
