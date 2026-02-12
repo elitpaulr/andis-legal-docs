@@ -37,7 +37,7 @@ defaults:
       layout: single
       sidebar:
         nav: "main"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "air"
 atom_feed:
   hide: true
 
