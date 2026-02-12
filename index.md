@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: "Agreement Documentation Hub"
 sidebar:
   nav: main
