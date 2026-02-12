@@ -1,0 +1,41 @@
+
+title: "AND-Improve Agreement Documentation"
+description: "Unified Terms, Privacy Policy, and Research Data Use Statements"
+url: ""
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+markdown: kramdown
+collections:
+  terms:
+    output: true
+    permalink: /terms/:path/
+  privacy:
+    output: true
+    permalink: /privacy/:path/
+  research:
+    output: true
+    permalink: /research/:path/
+defaults:
+  - scope:
+      path: ""
+      type: "terms"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: "privacy"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+minimal_mistakes_skin: "default"

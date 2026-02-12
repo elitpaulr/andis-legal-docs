@@ -1,0 +1,10 @@
+
+main:
+  - title: "Terms of Use"
+    url: /terms/latest/
+  - title: "Privacy Policy"
+    url: /privacy/latest/
+  - title: "Research Data Use"
+    url: /research/latest/
+  - title: "Version History"
+    url: /version-history/
