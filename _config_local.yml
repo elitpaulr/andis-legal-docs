@@ -1,0 +1,9 @@
+# Local overrides for easier development
+# IMPORTANT: No tabs, only spaces
+
+baseurl: ""               # Remove project folder locally
+url: "http://localhost:4000"
+
+# Hide Atom/RSS feed locally if you want
+atom_feed:
+  hide: true

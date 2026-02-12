@@ -1,6 +1,5 @@
-
 main:
-  - title: "Terms of Use"
+  - title: "Terms and Conditions of Use"
     url: /terms/latest/
   - title: "Privacy Policy"
     url: /privacy/latest/
