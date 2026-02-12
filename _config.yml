@@ -1,7 +1,6 @@
 title: "AND-Improve Agreement Documentation"
 description: "Unified Terms, Privacy Policy, and Research Data Use Statements"
 url: ""
-theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
