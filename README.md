@@ -211,11 +211,14 @@ Any in‑product links (onboarding, settings, footer) must point to these stable
   2. permalink: /…/latest/ moved to the new file
   3. Previous version marked archived + robots: noindex + banner
   2. version-history.md updated with links
- - Local build clean; routes verified
- - PR raised, reviewed, merged
- - GitHub Pages build green
- - In‑product links confirm /latest/ endpoints
+  3. Local build clean; routes verified
+  4. PR raised, reviewed, merged
+  5. GitHub Pages build green
+  6. In‑product links confirm /latest/ endpoints
 
+
+
+# Next steps:
 
 ## 📚 Policy Versioning: Linking Old Versions — Guidance
  
@@ -278,19 +281,23 @@ privacy/
 research/
   v1.md
 
-###2. “Latest” permalink ownership
+### 2. “Latest” permalink ownership
+
 Only the current version file includes:
-YAMLpermalink: /policy-name/latest/Show more lines
+- YAMLpermalink: /policy-name/latest/Show more lines
 When publishing a new version, remove the permalink from the previous file and add it to the new one.
-###3. Marking archived versions
+
+### 3. Marking archived versions
+
 Archived versions should include:
-YAML---title: "Privacy Policy v1 (Archived)"layout: singlerobots: noindex---> ⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
-###4. Linking from Version History
+- YAML---title: "Privacy Policy v1 (Archived)"layout: singlerobots: noindex---> ⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
+
+### 4. Linking from Version History
 Example:
 Markdown## Privacy Policy- v2 — 2026‑04: Updated minors section- v1 — 2026‑02: Initial unified Privacy Policy- **Latest:** /privacy/latest/Show more lines
 Relative links work locally and on GitHub Pages due to the baseurl setup.
 
-#📝 Summary
+# 📝 Summary
 Linking old versions is good practice when done carefully:
 
 ✔ improves transparency
@@ -301,6 +308,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
