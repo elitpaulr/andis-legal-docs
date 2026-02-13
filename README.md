@@ -294,14 +294,14 @@ When publishing a new version, remove the permalink from the previous file and a
 
 Archived versions should include:
 - YAML
-> ```
-> ---
->   title: "Privacy Policy v1 (Archived)"
->   layout: singlerobots: noindex
-> ---
-> ```
+```
+---
+title: "Privacy Policy v1 (Archived)"
+layout: singlerobots: noindex
+---
+```
 
-> ⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
+⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
 
 ### 4. Linking from Version History
 Example:
@@ -319,6 +319,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
