@@ -324,8 +324,8 @@ Linking old versions is good practice when done carefully:
 ✔ protects search results with noindex
 ✔ keeps a clean /latest/ endpoint for the current version
 
-
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
