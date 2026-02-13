@@ -32,7 +32,7 @@ jdev
 
 ### 1) Structure recap
 
-Collections:
+#### Collections:
 
 terms/ — Terms of Use & Conditions (versioned: v1.md, v2.md, …)
 privacy/ — Privacy Policy (versioned)
@@ -305,5 +305,6 @@ Linking old versions is good practice when done carefully:
 ✔ avoids user confusion with clear banners
 ✔ protects search results with noindex
 ✔ keeps a clean /latest/ endpoint for the current version
+
 
 This repository is structured to make this workflow simple, safe, and auditable.
