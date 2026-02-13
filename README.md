@@ -122,13 +122,12 @@ jdev
 
 ### 5) Commit, PR, and merge
 
-´´´
+```
 git checkout -b release/privacy-v2
 git add .
 git commit -m "Privacy Policy v2: minors/public datasets update; archive v1; update version history"
 git push -u origin release/privacy-v2
-
-´´´
+```
 
 Open a PR:
 
@@ -300,6 +299,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
