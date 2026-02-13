@@ -93,13 +93,13 @@ Open version-history.md and add entries with links:
 
 Reminder: The Version History page must have a directory permalink to avoid 404:
 
-´´´
+```
 ---
 layout: single
 title: "Version History"
 permalink: /version-history/
 ---
-´´´
+```
 
 ### 4) Local QA checklist
 
@@ -308,6 +308,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
