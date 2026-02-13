@@ -260,13 +260,13 @@ Schools, auditors, and academic partners often need to confirm older versions of
 **Mitigation:** Add this front‑matter to archived files:yaml robots: noindex
 
 
-##Slight maintenance overhead
+#### Slight maintenance overhead
 Each time you publish a new version:
 
-add a new vN.md file,
-move the /latest/ permalink to it,
-mark the previous version as archived,
-update version-history.md.
+1. add a new vN.md file,
+1. move the /latest/ permalink to it,
+1. mark the previous version as archived,
+1. update version-history.md.
 
 This repository’s structure makes this workflow simple.
 
@@ -308,6 +308,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
