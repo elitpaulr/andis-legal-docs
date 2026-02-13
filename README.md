@@ -318,13 +318,14 @@ Relative links work locally and on GitHub Pages due to the baseurl setup.
 ## 📝 Summary
 Linking old versions is good practice when done carefully:
 
-✔ improves transparency
-✔ supports compliance
-✔ avoids user confusion with clear banners
-✔ protects search results with noindex
-✔ keeps a clean /latest/ endpoint for the current version
+- ✔ improves transparency
+- ✔ supports compliance
+- ✔ avoids user confusion with clear banners
+- ✔ protects search results with noindex
+- ✔ keeps a clean /latest/ endpoint for the current version
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
