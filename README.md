@@ -305,10 +305,13 @@ layout: singlerobots: noindex
 
 ### 4. Linking from Version History
 Example:
+
+```
 ## Privacy Policy- v2
 > — 2026‑04: Updated minors section
 > - v1 — 2026‑02: Initial unified Privacy Policy
 > - **Latest:** /privacy/latest/Show more lines
+```
 
 Relative links work locally and on GitHub Pages due to the baseurl setup.
 
@@ -323,6 +326,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
