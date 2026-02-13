@@ -273,6 +273,8 @@ This repository’s structure makes this workflow simple.
 ## 🧭 How Archived Versions Should Be Implemented
 ### 1. File structure
 Each policy lives inside its own Jekyll collection:
+
+```
 terms/
   v1.md
   v2.md   <-- current version (owns /terms/latest/)
@@ -280,6 +282,7 @@ privacy/
   v1.md   <-- current version until v2 created
 research/
   v1.md
+```
 
 ### 2. “Latest” permalink ownership
 
@@ -297,7 +300,7 @@ Example:
 Markdown## Privacy Policy- v2 — 2026‑04: Updated minors section- v1 — 2026‑02: Initial unified Privacy Policy- **Latest:** /privacy/latest/Show more lines
 Relative links work locally and on GitHub Pages due to the baseurl setup.
 
-# 📝 Summary
+## 📝 Summary
 Linking old versions is good practice when done carefully:
 
 ✔ improves transparency
@@ -308,6 +311,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
