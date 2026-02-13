@@ -103,31 +103,23 @@ permalink: /version-history/
 
 ### 4) Local QA checklist
 
-Routes resolve:
-
-/terms/latest/, /privacy/latest/, /research/latest/
-Archived routes, e.g. /privacy/v1/
-
-
-Version History links work and point to the intended versions.
-Archived pages:
-
-Show the warning banner
-Include robots: noindex in front matter
-
-
-Content regressions:
-
-Minors’ protections reflect current policy (e.g., no public release of minors’ content)
-Research statement matches current dataset publication/licence practice
-
-
-Build cleanly:
+- Routes resolve:
+    - /terms/latest/, /privacy/latest/, /research/latest/
+    - Archived routes, e.g. /privacy/v1/
+- Version History links work and point to the intended versions.
+- Archived pages:
+  - Show the warning banner
+  - Include robots: noindex in front matter
+- Content regressions:
+  - Minors’ protections reflect current policy (e.g., no public release of minors’ content)
+  - Research statement matches current dataset publication/licence practice
+- Build cleanly:
 
 ```
 bundle exec jekyll clean
 jdev
 ```
+
 ### 5) Commit, PR, and merge
 
 ´´´
@@ -308,6 +300,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
