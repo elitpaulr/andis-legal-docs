@@ -169,9 +169,9 @@ permalink: /privacy/latest/
 
 All archived versions must include:
 
-´´´
+```
 robots: noindex
-´´´
+```
 
 - Latest versions should remain indexable (default).
 - Version History page is indexable, but it only links to noindex archives and to /latest/.
@@ -299,6 +299,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
