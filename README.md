@@ -155,10 +155,10 @@ If you see a 404 on Version History:
 ### 7) Rollback (if needed)
 If a new version must be reverted:
 
-Re-open the previous version file (e.g., privacy/v1.md) and restore:
-´´´
+- Re-open the previous version file (e.g., privacy/v1.md) and restore:
+```
 permalink: /privacy/latest/
-´´´
+```
 
 - Mark the problematic version as archived (and remove its permalink).
 - Update version-history.md with a rollback note.
@@ -299,6 +299,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
