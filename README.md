@@ -34,9 +34,9 @@ jdev
 
 #### Collections:
 
-terms/ — Terms of Use & Conditions (versioned: v1.md, v2.md, …)  
-privacy/ — Privacy Policy (versioned)  
-research/ — Research & Corpus Data Use Statement (versioned)  
+> terms/ — Terms of Use & Conditions (versioned: v1.md, v2.md, …)  
+> privacy/ — Privacy Policy (versioned)  
+> research/ — Research & Corpus Data Use Statement (versioned)  
 
 
 “Current” version owns the /…/latest/ permalink.
@@ -325,6 +325,7 @@ Linking old versions is good practice when done carefully:
 - ✔ keeps a clean /latest/ endpoint for the current version
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
