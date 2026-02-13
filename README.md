@@ -90,6 +90,7 @@ Open version-history.md and add entries with links:
 > - v2 — 2026‑04: Updated minors section and public datasets note.
 > - v1 — 2026‑02: Initial unified Privacy Policy.
 > - **Latest:** /privacy/latest/
+
 Reminder: The Version History page must have a directory permalink to avoid 404:
 
 ´´´
@@ -307,5 +308,6 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
