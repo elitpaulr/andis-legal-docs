@@ -70,6 +70,7 @@ layout: single
 ```
 
 ### 4. Edit the content as required (date, sections, links, minors’ safeguards, etc.).
+
 ### 5.) Mark the previous version as archived:
 
 - Optional title tweak: "Privacy Policy v1 (Archived)"
@@ -138,6 +139,7 @@ Open a PR:
 After approval, merge to main.
 
 ### 6) Publish on GitHub Pages (production)
+
 GitHub Pages auto-builds from main.
 
 - Watch Actions → pages-build-deployment for a green check.
@@ -153,6 +155,7 @@ If you see a 404 on Version History:
 
 
 ### 7) Rollback (if needed)
+
 If a new version must be reverted:
 
 - Re-open the previous version file (e.g., privacy/v1.md) and restore:
@@ -204,11 +207,10 @@ Any in‑product links (onboarding, settings, footer) must point to these stable
 
 
 ### 12) Quick publish checklist (copy/paste)
-
- - New version file created (vN.md)
- - permalink: /…/latest/ moved to the new file
- - Previous version marked archived + robots: noindex + banner
- version-history.md updated with links
+  1. New version file created (vN.md)
+  2. permalink: /…/latest/ moved to the new file
+  3. Previous version marked archived + robots: noindex + banner
+  2. version-history.md updated with links
  - Local build clean; routes verified
  - PR raised, reviewed, merged
  - GitHub Pages build green
@@ -299,6 +301,7 @@ Linking old versions is good practice when done carefully:
 
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
 
 
 
