@@ -1,10 +1,8 @@
 ---
 layout: single
 title: "Version History"
-sidebar:
-  nav: main
+permalink: /version-history/
 ---
-# Version History
 
 ## Terms of Use
 - v1 — 2026-02: Initial unified Terms of Use.
