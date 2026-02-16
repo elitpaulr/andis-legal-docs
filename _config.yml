@@ -1,6 +1,7 @@
 title: "AND-Improve Agreement Documentation"
 description: "Unified Terms, Privacy Policy, and Research Data Use Statements"
-url: ""
+url: "https://elitpaulr.github.io"
+baseurl: "/andis-legal-docs"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
 plugins:
