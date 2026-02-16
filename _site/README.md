@@ -32,11 +32,11 @@ jdev
 
 ### 1) Structure recap
 
-Collections:
+#### Collections:
 
-terms/ — Terms of Use & Conditions (versioned: v1.md, v2.md, …)
-privacy/ — Privacy Policy (versioned)
-research/ — Research & Corpus Data Use Statement (versioned)
+> terms/ — Terms of Use & Conditions (versioned: v1.md, v2.md, …)  
+> privacy/ — Privacy Policy (versioned)  
+> research/ — Research & Corpus Data Use Statement (versioned)  
 
 
 “Current” version owns the /…/latest/ permalink.
@@ -70,6 +70,7 @@ layout: single
 ```
 
 ### 4. Edit the content as required (date, sections, links, minors’ safeguards, etc.).
+
 ### 5.) Mark the previous version as archived:
 
 - Optional title tweak: "Privacy Policy v1 (Archived)"
@@ -85,58 +86,49 @@ layout: single
 ### 3) Update the Version History page
 Open version-history.md and add entries with links:
 
-´´´
-## Privacy Policy
-- v2 — 2026‑04: Updated minors section and public datasets note.
-- v1 — 2026‑02: Initial unified Privacy Policy.
-- **Latest:** /privacy/latest/
 
-´´´
+> ## Privacy Policy
+> - v2 — 2026‑04: Updated minors section and public datasets note.
+> - v1 — 2026‑02: Initial unified Privacy Policy.
+> - **Latest:** /privacy/latest/
+
 Reminder: The Version History page must have a directory permalink to avoid 404:
 
-´´´
+```
 ---
 layout: single
 title: "Version History"
 permalink: /version-history/
 ---
-´´´
+```
+
 ### 4) Local QA checklist
 
-Routes resolve:
-
-/terms/latest/, /privacy/latest/, /research/latest/
-Archived routes, e.g. /privacy/v1/
-
-
-Version History links work and point to the intended versions.
-Archived pages:
-
-Show the warning banner
-Include robots: noindex in front matter
-
-
-Content regressions:
-
-Minors’ protections reflect current policy (e.g., no public release of minors’ content)
-Research statement matches current dataset publication/licence practice
-
-
-Build cleanly:
+- Routes resolve:
+    - /terms/latest/, /privacy/latest/, /research/latest/
+    - Archived routes, e.g. /privacy/v1/
+- Version History links work and point to the intended versions.
+- Archived pages:
+  - Show the warning banner
+  - Include robots: noindex in front matter
+- Content regressions:
+  - Minors’ protections reflect current policy (e.g., no public release of minors’ content)
+  - Research statement matches current dataset publication/licence practice
+- Build cleanly:
 
 ```
 bundle exec jekyll clean
 jdev
 ```
+
 ### 5) Commit, PR, and merge
 
-´´´
+```
 git checkout -b release/privacy-v2
 git add .
 git commit -m "Privacy Policy v2: minors/public datasets update; archive v1; update version history"
 git push -u origin release/privacy-v2
-
-´´´
+```
 
 Open a PR:
 
@@ -147,6 +139,7 @@ Open a PR:
 After approval, merge to main.
 
 ### 6) Publish on GitHub Pages (production)
+
 GitHub Pages auto-builds from main.
 
 - Watch Actions → pages-build-deployment for a green check.
@@ -162,12 +155,13 @@ If you see a 404 on Version History:
 
 
 ### 7) Rollback (if needed)
+
 If a new version must be reverted:
 
-Re-open the previous version file (e.g., privacy/v1.md) and restore:
-´´´
+- Re-open the previous version file (e.g., privacy/v1.md) and restore:
+```
 permalink: /privacy/latest/
-´´´
+```
 
 - Mark the problematic version as archived (and remove its permalink).
 - Update version-history.md with a rollback note.
@@ -178,9 +172,9 @@ permalink: /privacy/latest/
 
 All archived versions must include:
 
-´´´
+```
 robots: noindex
-´´´
+```
 
 - Latest versions should remain indexable (default).
 - Version History page is indexable, but it only links to noindex archives and to /latest/.
@@ -213,16 +207,18 @@ Any in‑product links (onboarding, settings, footer) must point to these stable
 
 
 ### 12) Quick publish checklist (copy/paste)
+  1. New version file created (vN.md)
+  2. permalink: /…/latest/ moved to the new file
+  3. Previous version marked archived + robots: noindex + banner
+  2. version-history.md updated with links
+  3. Local build clean; routes verified
+  4. PR raised, reviewed, merged
+  5. GitHub Pages build green
+  6. In‑product links confirm /latest/ endpoints
 
- - New version file created (vN.md)
- - permalink: /…/latest/ moved to the new file
- - Previous version marked archived + robots: noindex + banner
- version-history.md updated with links
- - Local build clean; routes verified
- - PR raised, reviewed, merged
- - GitHub Pages build green
- - In‑product links confirm /latest/ endpoints
 
+
+# Next steps:
 
 ## 📚 Policy Versioning: Linking Old Versions — Guidance
  
@@ -264,19 +260,21 @@ Schools, auditors, and academic partners often need to confirm older versions of
 **Mitigation:** Add this front‑matter to archived files:yaml robots: noindex
 
 
-##Slight maintenance overhead
+#### Slight maintenance overhead
 Each time you publish a new version:
 
-add a new vN.md file,
-move the /latest/ permalink to it,
-mark the previous version as archived,
-update version-history.md.
+1. add a new vN.md file,
+1. move the /latest/ permalink to it,
+1. mark the previous version as archived,
+1. update version-history.md.
 
 This repository’s structure makes this workflow simple.
 
 ## 🧭 How Archived Versions Should Be Implemented
 ### 1. File structure
 Each policy lives inside its own Jekyll collection:
+
+```
 terms/
   v1.md
   v2.md   <-- current version (owns /terms/latest/)
@@ -284,26 +282,67 @@ privacy/
   v1.md   <-- current version until v2 created
 research/
   v1.md
+```
 
-###2. “Latest” permalink ownership
+### 2. “Latest” permalink ownership
+
 Only the current version file includes:
-YAMLpermalink: /policy-name/latest/Show more lines
+- YAMLpermalink: /policy-name/latest/Show more lines
 When publishing a new version, remove the permalink from the previous file and add it to the new one.
-###3. Marking archived versions
+
+### 3. Marking archived versions
+
 Archived versions should include:
-YAML---title: "Privacy Policy v1 (Archived)"layout: singlerobots: noindex---> ⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
-###4. Linking from Version History
+- YAML
+```
+---
+title: "Privacy Policy v1 (Archived)"
+layout: singlerobots: noindex
+---
+```
+
+⚠️ **Archived version — not currently in effect.**  > View the latest version: /privacy/latest/Show more lines
+
+### 4. Linking from Version History
 Example:
-Markdown## Privacy Policy- v2 — 2026‑04: Updated minors section- v1 — 2026‑02: Initial unified Privacy Policy- **Latest:** /privacy/latest/Show more lines
+
+```
+## Privacy Policy- v2
+> — 2026‑04: Updated minors section
+> - v1 — 2026‑02: Initial unified Privacy Policy
+> - **Latest:** /privacy/latest/Show more lines
+```
+
 Relative links work locally and on GitHub Pages due to the baseurl setup.
 
-#📝 Summary
+## 📝 Summary
 Linking old versions is good practice when done carefully:
 
-✔ improves transparency
-✔ supports compliance
-✔ avoids user confusion with clear banners
-✔ protects search results with noindex
-✔ keeps a clean /latest/ endpoint for the current version
+- ✔ improves transparency
+- ✔ supports compliance
+- ✔ avoids user confusion with clear banners
+- ✔ protects search results with noindex
+- ✔ keeps a clean /latest/ endpoint for the current version
 
 This repository is structured to make this workflow simple, safe, and auditable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
