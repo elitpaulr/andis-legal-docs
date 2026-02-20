@@ -2,6 +2,8 @@
 layout: single
 title: "Version History"
 permalink: /version-history/
+robots: noindex
+sitemap: false
 ---
 
 ## Terms of Use
